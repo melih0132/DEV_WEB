@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#like {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 50px;
+}
+
+#like:before,
+#like:after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#like:before {
+    top: -50px;
+    left: 0;
+}
+
+#like:after {
+    left: 50px;
+    top: 0;
+}
